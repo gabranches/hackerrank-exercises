@@ -35,14 +35,11 @@ class Complex(object):
 	def conjugate(self):
 			return Complex(self.real, -self.complex)
 
-
 def format_imaginary(s):
 	return "{0:.2f}".format(round(float(s), 2))
 
-
 def mod(n):
 	return Complex(((n.real ** 2 + n.complex ** 2) ** 0.5), 0)
-
 
 n1 = map(float, raw_input().split())
 n2 = map(float, raw_input().split())

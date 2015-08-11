@@ -1,8 +1,5 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-import os
 import math
-
-path = os.path.dirname(os.path.realpath(__file__))
 
 class Point(object):
 
@@ -14,7 +11,6 @@ class Point(object):
 	def __str__(self):
 		return str(self.x) + ', ' + str(self.y) + ', ' + str(self.z)
 
-
 def cross(a, b):
 	'''Returns the cross product of two vectors'''
 	x = a.y * b.z - a.z * b.y
@@ -22,26 +18,21 @@ def cross(a, b):
 	z = a.x * b.y - a.y * b.x
 	return Point(x, y, z)
 
-
 def sub(a, b):
 	'''Subtracts two vectors'''
 	return Point(a.x - b.x, a.y - b.y, a.z - b.z)
-
 
 def dot(a, b):
 	'''Returns the dot product of two vectors'''
 	return (a.x * b.x + a.y * b.y + a.z * b.z)
 
-
 def absv(a):
 	'''Returns the absolute value of a vector'''
 	return (a.x ** 2 + a.y ** 2 + a.z ** 2) ** 0.5
 
-
 def torsional(X, Y):
 	'''Returns the torsional angle of two vectors'''
 	return math.degrees(math.acos(dot(X, Y) / (absv(X) * absv(Y))))
-
 
 points = []
 
