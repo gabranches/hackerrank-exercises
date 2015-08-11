@@ -1,5 +1,3 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
 string = raw_input()
 substr = raw_input()
 counter = 0

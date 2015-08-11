@@ -46,7 +46,6 @@ class Complex(object):
 		'''Returns the modulus of a complex number'''
 		return Complex(((self.real ** 2 + self.complex ** 2) ** 0.5), 0)
 
-
 n1 = raw_input().strip().split()
 n2 = raw_input().strip().split()
 

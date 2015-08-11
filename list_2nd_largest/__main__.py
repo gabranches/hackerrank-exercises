@@ -1,5 +1,3 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
 stdin = [raw_input().split() for _ in range(0,2)]
 num_list = map(int,stdin[1])
 

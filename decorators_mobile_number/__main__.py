@@ -11,7 +11,6 @@ def number_standardizer(func):
 
 	return add_prefix
 
-
 @number_standardizer
 def sort_numbers(numbers):
 	return sorted([x[-10:] for x in numbers])

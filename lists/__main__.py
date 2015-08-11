@@ -1,5 +1,3 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
 L = []
 
 while True:
@@ -29,7 +27,6 @@ def scan(list):
     else:
         print 'Inavlid command, please try again'
         scan(raw_input().split(' '))
-
     
 for i in range(0, n):
     commands = raw_input().split(' ')
