@@ -1,5 +1,3 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
 class Complex(object):
 
 	def __init__(self, real, complex):
