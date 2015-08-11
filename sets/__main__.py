@@ -1,4 +1,5 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
+
 def build_set():
     a = int(raw_input())
     a_str = raw_input()
