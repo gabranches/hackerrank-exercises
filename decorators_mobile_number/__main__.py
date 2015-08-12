@@ -5,10 +5,8 @@ for _ in range(0, n):
 	numbers.append(raw_input())
 
 def number_standardizer(func):
-
 	def add_prefix(*args, **kwargs):
 		return [ "+91 " + x[:5] + ' ' + x[-5:] for x in func(*args, **kwargs) ]
-
 	return add_prefix
 
 @number_standardizer
