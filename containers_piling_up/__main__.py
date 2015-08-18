@@ -9,7 +9,7 @@ def move_cube(origin, destination, side):
 	destination.append(move_cube)
 
 def stackable(cur_cubes, stacked_cubes):
-	''' Returns True if the list of cubes is stackable '''
+	''' Determine if cubes are stackable '''
 
 	while len(cur_cubes) > 0:
 
@@ -33,7 +33,6 @@ def stackable(cur_cubes, stacked_cubes):
 			return 'No'
 
 	return 'Yes'
-
 
 for _ in xrange(0, test_cases):
 	num_cubes = int(raw_input())
