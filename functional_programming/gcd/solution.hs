@@ -1,11 +1,8 @@
 module Main where
 
-
 gcd' :: Integral a => a -> a -> a
 gcd' 0 m = m
 gcd' n m = gcd' (m `mod` n) n
-
-
 
 -- This part is related to the Input/Output and can be used as it is
 -- Do not modify it
