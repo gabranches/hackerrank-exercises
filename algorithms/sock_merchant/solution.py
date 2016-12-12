@@ -16,6 +16,4 @@ def countPairs(arr):
     else:
         return countPairs([x2] + xs)
     
-print(countPairs(c))
-        
-    
+print(countPairs(c))  
