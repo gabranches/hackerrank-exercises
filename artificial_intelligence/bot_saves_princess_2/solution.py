@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 def get_pos(grid, x):
     for row in range(0, len(grid)):
         for col in range(0, len(grid[row])):
@@ -14,22 +12,22 @@ def find_path(x, y, grid):
 def displayPathtoPrincess(n,grid):
     path = find_path('p', 'm', grid)
     
-    while path[0] != 0 or path[1] != 0:
-        if path[0] < 0:
-            print("UP")
-            path[0] += 1
-        if path[0] > 0:
-            print("DOWN")
-            path[0] -= 1
-        if path[1] < 0:
-            print("LEFT")
-            path[1] += 1
-        if path[1] > 0:
-            print("RIGHT")
-            path[1] -= 1  
+    if path[0] < 0:
+        print("UP")
+        path[0] += 1
+    elif path[0] > 0:
+        print("DOWN")
+        path[0] -= 1
+    elif path[1] < 0:
+        print("LEFT")
+        path[1] += 1
+    elif path[1] > 0:
+        print("RIGHT")
+        path[1] -= 1  
      
 m = int(input())
-grid = [] 
+m2 = input().strip()
+grid = []
 for i in range(0, m): 
     grid.append(input().strip())
     
