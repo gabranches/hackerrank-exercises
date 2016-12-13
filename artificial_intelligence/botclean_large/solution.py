@@ -39,15 +39,15 @@ def move_bot(posr, posc, board):
         elif posc > closest[1]:
             print('LEFT')
     
-def next_move(posr, posc, board):
+def next_move(posr, posc, dimx, dimy, board):
     '''Clean up node if dirty, or move to another node. '''
     if board[posr][posc] == 'd':
         print('CLEAN')
     else:
         move_bot(posr, posc, board)
-                
-# Tail starts here
+        
 if __name__ == "__main__":
     pos = [int(i) for i in input().strip().split()]
-    board = [[j for j in input().strip()] for i in range(5)]
-    next_move(pos[0], pos[1], board)
+    dim = [int(i) for i in input().strip().split()]
+    board = [[j for j in input().strip()] for i in range(dim[0])]
+    next_move(pos[0], pos[1], dim[0], dim[1], board)
